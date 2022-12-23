@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>GoNative Test</title>
+      <script>
+         if (navigator.userAgent.indexOf('gonative') > -1) {
+            alert("GoNative")
+            if(navigator.userAgent.indexOf('GoNativeAndroid') > -1) {
+               alert("Android")
+            } else if(navigator.userAgent.indexOf('GoNativeIOS') > -1) {
+               alert("iOS")
+            }
+         }
+      </script>
+   </head>
+   <body>
+      <h1>Welcome to the test site</h1>
+   </body>
+</html>
