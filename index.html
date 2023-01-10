@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>GoNative Test</title>
-      <script>
-         if (navigator.userAgent.indexOf('gonative') > -1) {
-            alert("GoNative")
-            if(navigator.userAgent.indexOf('GoNativeAndroid') > -1) {
-               alert("Android")
-            } else if(navigator.userAgent.indexOf('GoNativeIOS') > -1) {
-               alert("iOS")
-            }
-         }
-      </script>
-   </head>
-   <body>
-      <h1>Welcome to the test site</h1>
-   </body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+    <script>
+      if (navigator.userAgent.indexOf('gonative') > -1) {               
+        function gonative_info_ready(inAppPurchases) {
+          console.log("gonative_info_ready")
+          console.log(inAppPurchases);
+          document.getElementById("iap").value = inAppPurchases
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>In App Purchases</h1>
+    <textarea id="iap"></textarea>
+  </body>
 </html>
