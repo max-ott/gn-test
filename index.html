@@ -9,13 +9,13 @@
         function gonative_info_ready(inAppPurchases) {
           console.log("gonative_info_ready")
           console.log(inAppPurchases);
-          document.getElementById("iap").value = inAppPurchases
+          document.getElementById("iap").innerHTML = inAppPurchases
         }
       }
     </script>
   </head>
   <body>
     <h1>In App Purchases</h1>
-    <textarea id="iap"></textarea>
+    <code id="iap"></code>
   </body>
 </html>
