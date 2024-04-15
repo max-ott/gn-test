@@ -1,5 +1,11 @@
 {
     "products": [
-        "com.clashyclans.wailingwizard"
+        "com.clashyclans.wailingwizard",
+        "com.clashyclans.daringdrake",
+        "com.clashyclans.boxofgems",
+        "com.clashyclans.satchelofgems",
+        "com.clashyclans.vaultofgems",
+        "com.clashyclans.defendermonthly",
+        "com.clashyclans.defenderyearly"
         ]
 }
